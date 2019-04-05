@@ -48,7 +48,7 @@ body {
 .top li a{
 	text-decoration:none;
 	color: #b2bab6;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	width:20%;
 }
 
@@ -64,6 +64,8 @@ body {
     column-gap: 2%;
     margin-top: 6%;
     overflow: hidden;
+	width: 90%;
+	margin-left: 5%;
 }
 
 .gallery img { 
