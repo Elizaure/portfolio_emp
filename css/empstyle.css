@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Cardo);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+html,
+body{
+  width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+  font-family: "Cardo";
+  font-weight: 1em;
+  line-height: 1.5;
+  color: #333;
+  background-color:#b2bab6;
+}
+
+.top{
+  height:6%;
+}
+
+.top ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #343148;
+	display: flex;
+	position: relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:5%;
+	align-items: center;
+}
+
+.top li {
+  float: left;
+	color: #b2bab6;
+	font-size: 1.5em;
+	width:20%;
+	text-align: center;
+}
+
+.top li:hover {
+  background-color:rgb(255, 111, 97);
+	cursor: default;
+	color: #343148;
+}
+
+.top li a{
+	text-decoration:none;
+	color: #b2bab6;
+	font-size: 1.1em;
+	width:20%;
+}
+
+.top li a:hover {
+	color: #343148;
+}
+
+h1 {
+	font-family: 'Montserrat';
+	font-size: 4em;
+	line-height: 1.5em;
+	margin-left: 5%;
+	font-weight: normal;
+}
+.footer {
+  clear: both;
+	position: relative;
+  background: #343148;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+	color:rgb(51, 122, 183);
+}
+.footer h1 {
+	margin-left: 0%;
+}
+
+#all{
+	width:90%;
+	height:90%;
+	overflow-x:hidden;
+	overflow-y:scroll;
+    position:relative;
+	margin-left: 5%;
+}
+
+img{
+    width:100%;
+	align-content: space-around;
+}
+
+#allcontent{
+    width:100%;
+    position:relative;
+	-webkit-animation: comein 1.5s ease-in-out;
+	-moz-animation: comein 1.5s ease-in-out;
+	animation: comein 1.5s ease-in-out;
+}
+
+p {
+	font-family: "Cardo";
+	font-size: 1.2em;
+	line-height: 1.7em;
+	padding: 4% 2% 2% 2%;
+	color: #343148;
+}
+
+.portfolio{
+    width:100%;
+    position:absolute;
+    right:0;
+    top:0;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+    cursor:pointer;
+	-webkit-box-shadow:-2px 0 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:-2px 0 3px rgba(0,0,0,0.3);
+	box-shadow:-2px 0 3px rgba(0,0,0,0.3);
+	background: #FFF;
+}
+
+
+
+#all:hover #double{display: block;
+}
+
+#double {
+	display: none;
+	font-family: "Cardo";
+	font-size: 1.5em;
+	color: #FFF;
+	margin-left:60%;
+}
+
+.portfolio:nth-child(1) {
+	left: 10px;
+}
+.portfolio:nth-child(1):hover {  
+	-webkit-transform: translate(0px, 30px);
+    -moz-transform: translate(0px, 30px);
+    transform: translate(0px, 30px);
+}
+
+.portfolio:nth-child(2) {
+	left: 10%;
+}
+.portfolio:nth-child(2):hover {
+	-webkit-transform: translate(0px, 30px);
+    -moz-transform: translate(0px, 30px);
+    transform: translate(0px, 30px);
+}
+
+.portfolio:nth-child(3) {  
+	left: 20%;
+}
+.portfolio:nth-child(3):hover {  
+	-webkit-transform: translate(0px, 30px);
+    -moz-transform: translate(0px, 30px);
+    transform: translate(0px, 30px);
+}
+
+.portfolio:nth-child(4) {  
+	left: 30%;
+}
+.portfolio:nth-child(4):hover {  
+	-webkit-transform: translate(0px, 30px);
+    -moz-transform: translate(0px, 30px);
+    transform: translate(0px, 30px);
+}
+
+.portfolio:nth-child(5) {  
+	left: 40%;
+}
+.portfolio:nth-child(5):hover {  
+	-webkit-transform: translate(0px, 30px);
+    -moz-transform: translate(0px, 30px);
+    transform: translate(0px, 30px);
+}
+
+.opened {  
+	z-index: 1000;
+	left:0 !important;
+	-webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-box-shadow:0 0 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 3px rgba(0,0,0,0.3);
+	box-shadow:0 0 3px rgba(0,0,0,0.3);
+	width:100%;
+}
+
+.opened img{
+	z-index:5;
+}
+
+/*.ombra{
+	position:absolute;
+    bottom:20px;
+    left:10px;
+    width:100%;
+	height:20px;
+	-webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	display:none;
+	z-index:-1;
+}
+
+.ombra:after{
+	display:block;
+	content:"";
+	position:absolute;
+    bottom:-8px;
+    right:-93px;
+    width:100%;
+	height:20px;
+	-webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+}*/
+
+.txt{
+    display:block;
+	margin:0 0 0 0;
+	padding-top:1%;
+	padding-left:2%;
+	height:50px;
+	background: #f7f7f7;
+	font-family: "Montserrat";
+	font-size:1.5em;
+		color: #343148;
+}
+
+
+
+#navi{
+	position:absolute;
+	left:50%;
+	bottom:-40px;
+	background:#000;
+	opacity:0.8;
+	color:#fff;
+	height:24px;
+	-webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    padding:7px 10px 0 10px;
+}
+
+.circle{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	-webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    background:#efefef;
+    border:1px solid #000;
+    margin-right:6px;
+    cursor:pointer;
+}
+
+.circle:hover{
+	background:#fff;
+	border:1px solid #ccc;
+}
+
+.circle:active,
+.activenav,
+.activenav:hover{
+	background:#666;
+	border:1px solid #333;
+}
+
+.activenav{
+	cursor: default;
+}
+
+.circle:last-child{
+	margin-right: 0;
+}
+
+#carousel1, #carousel2, #carousel3, #carousel4 {
+  width: 50%;
+  margin-top: 2%;
+  float: right;
+}
+#img {
+  width: 50%;	
+  margin-top: 2%;
+  float: right;
+}
+
+.expl {
+  float: left;
+	width: 45%;
+	margin-left: 2%;
+}
+
+p{
+	margin : 0 0 0 0;
+}
+/* loading */
+#loading{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+	z-index:10001;
+	position:absolute;
+}
+
+.loader{
+    display: block;
+    height: 30px;
+    left: 50%;
+    margin: -15px 0 0 -15px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+	animation: spin 1s infinite linear;
+	-moz-animation: spin 1s infinite linear;
+	-webkit-animation: spin 1s infinite linear;
+}
+
+
+/*enter*/
+@-webkit-keyframes comein {
+	0% { opacity: 0; -webkit-transform: translateY(-3000px); }
+	80% { opacity: 1; -webkit-transform: translateY(40px); }
+	100% { -webkit-transform: translateY(0); }
+}
+@-moz-keyframes comein {
+	0% { opacity: 0; -moz-transform: translateY(-3000px); }
+	80% { opacity: 1; -moz-transform: translateY(40px); }
+	100% { -moz-transform: translateY(0); }
+}
+@keyframes comein {
+	0% { opacity: 0; transform: translateY(-3000px); }
+	80% { opacity: 1; transform: translateY(40px); }
+	100% { transform: translateY(0); }
+}

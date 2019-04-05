@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Cardo);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.top{
+  height:6%;
+  background:#f7ffce;
+}
+
+.top ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #343148;
+	display: flex;
+	position: relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:5%;
+	align-items: center;
+}
+
+.top li {
+  float: left;
+	color: #b2bab6;
+	font-size: 1.2em;
+	width:20%;
+	text-align: center;
+}
+
+.top li:hover {
+  background-color:rgb(255, 111, 97);
+	cursor: default;
+	color: #343148;
+}
+
+.top li a{
+	text-decoration:none;
+	color: #b2bab6;
+	font-size: 1.2em;
+	width:20%;
+}
+
+.top li a:hover {
+	color: #343148;
+}
+
+.footer {
+  background: #343148;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+	color:rgb(51, 122, 183);
+}
+.footer h1 {
+	margin-left: 0%;
+}
+
+h1 {
+	font-family: 'Montserrat';
+	font-size: 4em;
+	line-height: 1.5em;
+	font-weight: normal;
+	margin-left: 5%;
+	color: #343148;
+}
+
+body {
+  font-family: "Cardo";
+  font-weight: 1em;
+  line-height: 1.5;
+  color: #333;
+  background-color:#b2bab6;
+}
+
+.row {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  clear: both;
+  overflow: hidden;
+}
+.row img {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;	
+}
+
+
+.gallery {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  overflow: hidden;
+	width: 100%;
+}
+.gallery ul {
+  padding-top: 1%;
+}
+.gallery ul li {
+  margin-bottom: 2%;
+  display: inline-block;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin: 2%;
+  width:20%;
+  height:20%;
+  max-width: 20%;
+  overflow: hidden;
+}
+.gallery ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+/*.gallery ul li a:before {
+  position: absolute;
+  margin: -14px 0 0 -16px;
+  background: url(../../images/plus.png) no-repeat;
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.gallery ul li a:hover:before {
+  top: 50%;
+  opacity: 1;
+}
+.gallery ul li a:after {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  filter: grayscale(80%);
+  filter: brightness(50%);
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.gallery ul li a:hover:after {
+  opacity: 1;
+}*/
+
+.gallery ul li a:hover {
+      transform: scale(1.15);
+	  -webkit-transition: all 0.3s linear;
+  	  -moz-transition: all 0.3s linear;
+       transition: all 0.3s linear;
+}
+
+
+.port {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  margin-top: 3%;
+  background: #ffffff;
+  background-color: #fafafa;
+  z-index: 103;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  border-bottom: 1px solid #d0d0d0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.port iframe {
+  width: 50%;
+  margin-top: 2%;
+}
+
+#carousel1 {
+	  width: 50%;
+  margin-top: 2%;
+  float: right;
+}
+.port .description {
+  float: left;
+  width: 48%;
+  max-height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-family: "Cardo";
+}
+.port h1 {
+  font-size: 2.5em;
+  line-height: 2em;
+  padding: 0;
+  font-family: "Montserrat";
+}
+.port > * {
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.port.item_open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.port > * {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.close {
+  width: 35px;
+  height: 35px;
+  margin-top: 3%;
+  background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A) no-repeat;
+  position: absolute;
+  right: 10px;
+  top: -121px;
+  opacity: 1;
+  z-index: 1004;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.item_open .close {
+  opacity: 1;
+  top: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#nb {
+	font-style: italic;
+}
+
+h3{
+	  font-size: 2.5em;
+  line-height: 2em;
+  padding: 0;
+  font-family: "Montserrat";
+}
+

@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Cardo);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  font-family: 'Cardo';
+  width:100%;
+  margin: 0px 0px 0px 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #343148;
+	display: flex;
+	position: relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:5%;
+	align-items: center;
+}
+
+li {
+  float: left;
+	color: #b2bab6;
+	font-size: 1.5em;
+	width:20%;
+	text-align: center;
+}
+
+li:hover {
+  background-color:rgb(255, 111, 97);
+	cursor: default;
+	color: #343148;
+}
+
+li a{
+	text-decoration:none;
+	color: #b2bab6;
+	font-size: 1.1em;
+	width:20%;
+}
+
+li a:hover {
+	color: #343148;
+}
+
+p {
+	font-size:1em;
+	line-height:1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+h1 {
+	font-family: 'Montserrat';
+	font-size: 4em;
+	line-height: 1.5em;
+	font-weight: normal;
+}
+.footer {
+  background: #343148;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+	color:rgb(51, 122, 183);
+}
+
